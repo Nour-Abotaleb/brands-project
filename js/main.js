@@ -32,7 +32,7 @@ toTop.addEventListener("click", () => {
 	window.scrollTo(0, 0);
 });
 
-// // Count Down
+// Count Down
 // const countDown = () => {
 //     const countDate = new Date("January 30, 2022 00:00:00").getTime();
 //     const now = new Date().getTime();
