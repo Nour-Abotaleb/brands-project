@@ -33,29 +33,29 @@ toTop.addEventListener("click", () => {
 });
 
 // Count Down
-// const countDown = () => {
-//     const countDate = new Date("January 30, 2022 00:00:00").getTime();
-//     const now = new Date().getTime();
-//     const gap = countDate - now;
+const countDown = () => {
+    const countDate = new Date("January 30, 2025 00:00:00").getTime();
+    const now = new Date().getTime();
+    const gap = countDate - now;
 
-//     const second = 1000;
-//     const minute = second * 60;
-//     const hour = minute * 60;
-//     const day = hour * 24;
+    const second = 1000;
+    const minute = second * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
 
-//     // Calculate the date
-//     const textDay = Math.floor(gap / day);
-//     const textHour = Math.floor((gap % day) / hour);
-//     const textMinute = Math.floor((gap % hour) / minute);
-//     const textSecond = Math.floor((gap % minute) / second);
+    // Calculate the date
+    const textDay = Math.floor(gap / day);
+    const textHour = Math.floor((gap % day) / hour);
+    const textMinute = Math.floor((gap % hour) / minute);
+    const textSecond = Math.floor((gap % minute) / second);
 
-//     document.querySelector(".day").innerText = textDay;
-//     document.querySelector(".hour").innerText = textHour;
-//     document.querySelector(".minute").innerText = textMinute;
-//     document.querySelector(".second").innerText = textSecond;
-// }
+    document.querySelector(".day").innerText = textDay;
+    document.querySelector(".hour").innerText = textHour;
+    document.querySelector(".minute").innerText = textMinute;
+    document.querySelector(".second").innerText = textSecond;
+}
 
-// setInterval(countDown, 1000);
+setInterval(countDown, 1000);
 
 
 
